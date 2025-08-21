@@ -23,6 +23,7 @@ public class CalculadoraSuficienciaGarantiasService {
 		BigDecimal valorExposicao = request.getValorExposicao();
 		BigDecimal valorTotalGarantiasAjustado = BigDecimal.ZERO;
 
+		// possivel extensão para injetar novas garantias.
 		for (GarantiaInput garantia : request.getGarantias()) {
 			BigDecimal haircut = haircutProperties.obterHaircutPercentual(garantia.getTipo());
 			BigDecimal fatorManutencao = BigDecimal.ONE.subtract(haircut.divide(BigDecimal.valueOf(100), new MathContext(10, RoundingMode.HALF_UP)));
