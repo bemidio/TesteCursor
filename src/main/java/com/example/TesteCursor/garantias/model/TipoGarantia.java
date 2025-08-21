@@ -1,0 +1,18 @@
+package com.example.TesteCursor.garantias.model;
+
+public enum TipoGarantia {
+	DINHEIRO,
+	CDB_RDB,
+	TITULO_PUBLICO,
+	ACOES_BLUE_CHIPS,
+	ACOES_OUTROS,
+	FUNDOS_RENDA_FIXA,
+	FUNDOS_MULTIMERCADO,
+	FUNDOS_ACOES,
+	IMOVEL,
+	VEICULO,
+	OURO,
+	CARTAO_CREDITO
+}
+
+
